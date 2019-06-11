@@ -10,11 +10,9 @@ tags: ["microservices"]
 
 There are three basic types of microservices that may be used in different situations:
 
-{{% todo %}}[**A LINK TO WHERE FOWLER AND LEWIS ACTUALLY SAY THIS WOULD BE GOOD; OTHERWISE, THE IMPRESSION IS THAT THIS IS A PARAPHRASE WITHOUT ATTRIBUTION, AND EVEN THAT ALL 3 TYPES ARE BASED ON THEIR THINKING**]{{% /todo %}}
-
-* **Business-oriented microservices** – Fowler and Lewis suggest these usually cover a business function and are autonomous, giving the full advantage of the microservices architecture pattern. These microservices have UX, logic, and data.
+* **User oriented microservices** – Martin Fowler suggest these usually cover a business function and are autonomous, giving the full advantage of the microservices architecture pattern. These microservices have UX, logic, and data, see https://martinfowler.com/articles/microservices.html
 * **API-oriented microservices** – These microservices are smaller and request–reply oriented. These are really closer to SOA layers, and they are good for generic functions behind web portals, for example. These microservices normally have only logic and data, as the UX is externally developed.
-* **Shared data microservices** – These are a set of smaller apps sharing a database, which means this microservice pattern is closer to the monolith pattern. The risk here is in creating a monolith if too many apps use the same database. The service has logic and UX.
+* **Apps sharing a Database** – A set of smaller apps sharing a database, means it is not a pure microservices pattern and it is closer to the monolith pattern. The risk is over time in havinig too many apps use the same database. It becomes a distributed monolith with the same dependency issues and flexibility is reduced.
 
 ![](attachments/three-microservices-patterns/tmp-intro.png)
 
